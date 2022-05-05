@@ -176,6 +176,7 @@ li > div {
   color: #b24a6d;
   position: absolute;
   bottom: -1.3rem;
+  display: none;
 }
 
 .form-btn {
