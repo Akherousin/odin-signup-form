@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-container {
+  display: flex;
+  font-size: 1.6rem;
+}
+
+.picture {
+  flex-shrink: 0;
+  width: max(40vw, 300px);
+  height: 100vh;
+  background-image: url(./pandu-ior-hckbnUpcm6E-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.picture-author {
+  color: white;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.link:link,
+.link:visited {
+  color: white;
+}
+
+.link:hover,
+.link:active {
+  text-decoration: none;
+}
