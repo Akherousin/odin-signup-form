@@ -16,6 +16,7 @@ html {
 body {
   background-color: #f7f7f7;
   font-family: sans-serif;
+  color: #333;
 }
 
 .main-container {
@@ -85,30 +86,117 @@ body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  padding: 0 5rem;
 }
 
 .text-introduction p {
   font-size: 1.8rem;
   font-weight: bold;
-  margin: 2rem 5rem;
+  margin-top: 2rem;
 }
 
 .text-introduction p:first-of-type {
   margin-top: 7rem;
 }
 
-.signup-form {
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: white;
-  height: 33vh;
-  padding: 2rem 5rem;
+  padding: 1rem 5rem;
+  height: 30vh;
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1);
 }
 
 ul {
   list-style: none;
   display: flex;
   flex-direction: column;
+  gap: 1.2rem;
 }
 
 .text-under-form {
   margin: 2rem 5rem;
+  font-weight: bold;
+}
+
+.text-under-form a:link,
+.text-under-form a:visited {
+  color: #596d48;
+}
+
+.text-under-form a:hover,
+.text-under-form a:active {
+  text-decoration: none;
+}
+
+li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+}
+
+li > div {
+  width: max(20rem, 20vw);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  position: relative;
+}
+
+.form-header {
+  margin-bottom: 2rem;
+}
+
+.input {
+  padding: 0.3rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+}
+
+.input:focus {
+  outline: 2px solid #4a6db2;
+}
+
+.label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+.error {
+  outline: 2px solid #b24a6d;
+}
+
+.error-message {
+  font-size: 1rem;
+  color: #b24a6d;
+  position: absolute;
+  bottom: -1.3rem;
+}
+
+.form-btn {
+  margin: 4rem 5rem;
+  padding: 1.5rem 3.5rem;
+  color: white;
+  background-color: #596d48;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  color: #959792;
+}
+
+.form-btn:active {
+  color: #959792;
+  box-shadow: 0 5px 10px 0.5px rgba(0, 0, 0, 0.1);
+  transform: translate(-1px, 1px);
 }

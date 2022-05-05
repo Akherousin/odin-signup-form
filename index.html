@@ -35,54 +35,85 @@
         </div>
 
         <form action="" class="signup-form">
-          <h2>Let's do this!</h2>
-          <ul>
-            <li>
-              <label class="label" for="first-name">
-                First name
-                <input
-                  class="input"
-                  id="first-name"
-                  type="text"
-                  placeholder="thor"
-                />
-              </label>
+          <div class="form-container">
+            <h2 class="form-header">Let's do this!</h2>
+            <ul>
+              <li>
+                <div>
+                  <label class="label" for="first-name"> First name </label>
+                  <input
+                    class="input"
+                    id="first-name"
+                    name="first-name"
+                    type="text"
+                    placeholder="thor"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="label" for="last-name"> Last name </label>
+                  <input
+                    class="input"
+                    id="last-name"
+                    name="last-name"
+                    type="text"
+                    placeholder="odinson"
+                    required
+                  />
+                </div>
+              </li>
+              <li>
+                <div>
+                  <label class="label" for="email"> Email </label>
+                  <input
+                    class="input"
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="label" for="phone-number"> Phone Number </label>
+                  <input
+                    class="input"
+                    id="phone-number"
+                    name="phone-number"
+                    type="tel"
+                    required
+                  />
+                </div>
+              </li>
+              <li>
+                <div>
+                  <label class="label" for="password "> Password </label>
+                  <input
+                    class="input error"
+                    id="password"
+                    name="password"
+                    type="password"
+                    required
+                  />
+                <span class="error-message">*Passwords do not match</span>
+                </div>
+                <div>
+                  <label class="label" for="password-confirm ">
+                    Confirm password
+                  </label>
+                  <input
+                  class="input error"
+                  id="password-confirm"
+                  name="password-confirm"
+                  type="password"
+                  required
+                  />
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
 
-              <label class="label" for="last-name">
-                Last name
-                <input
-                  class="input"
-                  id="last-name "
-                  type="text"
-                  placeholder="odinson"
-                />
-              </label>
-            </li>
-            <li>
-              <label class="label" for="email">
-                Email
-                <input class="input" id="email " type="email" />
-              </label>
-
-              <label class="label" for="phone-number">
-                Phone Number
-                <input class="input" id="phone-number" type="tel" />
-              </label>
-            </li>
-            <li>
-              <label class="label" for="password">
-                Password
-                <input class="input" id="password" type="password" />
-              </label>
-
-              <label class="label" for="password-confirm">
-                Confirm password
-                <input class="input" id="password-confirm" type="password" />
-              </label>
-            </li>
-          </ul>
-
-          <button>Create Account</button>
+          <button class="form-btn">Create Account</button>
         </form>
 
         <p class="text-under-form">
